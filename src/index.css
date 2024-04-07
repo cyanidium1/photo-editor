@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
 body {
+  background-color: #BFDBFE;
   margin: 0;
   font-family: "Prata", serif;
   -webkit-font-smoothing: antialiased;

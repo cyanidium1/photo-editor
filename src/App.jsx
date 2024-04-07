@@ -78,37 +78,37 @@ function App() {
     <div className="App flex flex-col items-center justify-center bg-blue-200 p-2 w-[800px] mx-auto">
 
 
-      <div className='flex items-center'>
-        <input type="file" accept="image/*" onChange={handleUploadImage} />
-        <button onClick={handleDownloadImage} className="bg-blue-500 text-white px-4 py-2 rounded-md">Скачать</button>
+      <div className='flex items-center space-x-52'>
+        <input className='w-48' type="file" accept="image/*" onChange={handleUploadImage} />
+        <button onClick={handleDownloadImage} className="bg-blue-500 text-white px-4 py-2 rounded-md w-48">Скачать</button>
       </div>
 
       <div className='flex space-x-2 mt-2'>
-        <TextField id="sq" label="Площадь" variant="outlined" value={sq} onChange={handleSqChange} />
-        <TextField id="br" label="Ванных" variant="outlined" value={br} onChange={handleBrChange} />
-        <TextField id="bd" label="Спален" variant="outlined" value={bd} onChange={handleBdChange} />
+        <TextField className='w-48' id="sq" label="Площадь" variant="outlined" value={sq} onChange={handleSqChange} />
+        <TextField className='w-48' id="br" label="Ванных" variant="outlined" value={br} onChange={handleBrChange} />
+        <TextField className='w-48' id="bd" label="Спален" variant="outlined" value={bd} onChange={handleBdChange} />
       </div>
 
       <div className='flex space-x-2 mt-2 justify-between'>
-        <TextField id="location" label="Адрес" variant="outlined" value={location} onChange={handleLocationChange} />
-        <TextField id="price" label="Цена" variant="outlined" value={price} onChange={handlePriceChange} />
-        <FormControlLabel control={<Switch checked={isOnSale} onChange={handleSwitchChange} />} label="Тип: Аренда/Продажа" />
+        <TextField className='w-48' id="location" label="Адрес" variant="outlined" value={location} onChange={handleLocationChange} />
+        <TextField className='w-48' id="price" label="Цена" variant="outlined" value={price} onChange={handlePriceChange} />
+        <FormControlLabel className='w-48' control={<Switch checked={isOnSale} onChange={handleSwitchChange} />} label="Аренда/Продажа" />
       </div>
 
       <div id="image-container" className="w-fit mt-2 relative">
         {imageUrl && <img src={imageUrl} alt="Изображение" className="max-w-full max-h-full" />}
         {/* верхний */}
-        <div className='absolute top-0 left-0 w-full bg-white h-32 flex justify-center items-center opacity-80'>
+        {imageUrl && <div className='absolute top-0 left-0 w-full bg-white h-32 flex justify-center items-center opacity-80'>
           <img src={img} alt="bstrust_logo" />
-        </div>
+        </div>}
         {/* сейл */}
-        <div className='opacity-80 font-prata absolute top-44 right-12 rounded-full bg-[#152544] w-40 h-40 flex flex-col justify-center items-center text-white'>
+        {imageUrl && <div className='opacity-80 font-prata absolute top-44 right-12 rounded-full bg-[#152544] w-40 h-40 flex flex-col justify-center items-center text-white'>
           <p className='text-3xl border-b-2 mb-1'>{isOnSale ? 'SALE' : 'RENT'} </p>
 
           <p>{isOnSale ? 'ПРОДАЖА' : 'АРЕНДА'} </p>
-        </div>
+        </div>}
         {/* нижний */}
-        <div className='absolute bottom-0 left-0 w-full bg-[#152544] h-32 flex flex-col justify-around opacity-80'>
+        {imageUrl && <div className='absolute bottom-0 left-0 w-full bg-[#152544] h-32 flex flex-col justify-around opacity-80'>
           <div className='flex justify-around'>
             <div className='flex items-center'>
               <img className='w-8 h-8 mr-3 mb-1' src={square} alt="sq" />
@@ -143,7 +143,7 @@ function App() {
               </p>
             </div>
           </div>
-        </div>
+        </div>}
         {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">{text}</div> */}
       </div>
     </div>
