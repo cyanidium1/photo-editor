@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://cyanidium1.github.io/photo-editor/static/css/main.2a5a50fc.css",
-    "main.js": "https://cyanidium1.github.io/photo-editor/static/js/main.16cc8614.js",
+    "main.css": "https://cyanidium1.github.io/photo-editor/static/css/main.2e0b9db1.css",
+    "main.js": "https://cyanidium1.github.io/photo-editor/static/js/main.86135b11.js",
     "static/media/logo.png": "https://cyanidium1.github.io/photo-editor/static/media/logo.49852dcb5e684b0b06cb.png",
     "index.html": "https://cyanidium1.github.io/photo-editor/index.html",
-    "main.2a5a50fc.css.map": "https://cyanidium1.github.io/photo-editor/static/css/main.2a5a50fc.css.map",
-    "main.16cc8614.js.map": "https://cyanidium1.github.io/photo-editor/static/js/main.16cc8614.js.map"
+    "main.2e0b9db1.css.map": "https://cyanidium1.github.io/photo-editor/static/css/main.2e0b9db1.css.map",
+    "main.86135b11.js.map": "https://cyanidium1.github.io/photo-editor/static/js/main.86135b11.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a5a50fc.css",
-    "static/js/main.16cc8614.js"
+    "static/css/main.2e0b9db1.css",
+    "static/js/main.86135b11.js"
   ]
 }
