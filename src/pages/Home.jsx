@@ -73,6 +73,7 @@ function App() {
     const handlePriceChange = (event) => {
         setprice(event.target.value);
     };
+
     return (
         <div className="App flex flex-col items-center justify-center bg-blue-200 p-2 w-[800px] mx-auto">
 
